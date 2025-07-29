@@ -132,7 +132,7 @@
   <img id="logo" src="ss2.gif" alt="System Sizer II Logo">
 
   <h1>Welcome to System Sizer II</h1>
-  <div id="version">Version 20250724</div>
+  <div id="version">Version 20250728</div>
 
   <div id="notice">
     Alert: In order to use this program, you MUST have a current water analysis with Hardness, Iron, and Manganese levels.
@@ -174,7 +174,7 @@
   <div id="result"></div>
 
   <div class="button-bar">
-    <button onclick="window.open('https://github.com/crotsertech/System-Sizer-II/issues', '_blank')">File a Bug Report</button>
+    <button onclick="window.open('https://github.com/crotsertech/System-Sizer-II-for-Web/issues', '_blank')">File a Bug Report</button>
     <button onclick="window.open('https://www.paypal.me/crotsertech', '_blank')">Donate to Developer</button>
     <button onclick="showLicense()">License</button>
     <button onclick="alert(`System Sizer II – Help\n\nSystem Sizer II is a simple tool for estimating the correct water softener size based on real-world inputs. It takes into account water hardness, iron, and manganese levels, as well as household size and compensates capacity if Ecosoft ECOMIX C is used.\n\nThis tool is intended for homeowners, installers, and professionals who already have a recent water analysis. It uses the U.S. EPA 2025 statistic of 82 gallons per person per day to estimate system capacity.\n\nSystem Sizer II gives you:\n• Recommended resin volume (in cubic feet)\n• Softener size (in grains)\n• Estimated gallons before regeneration\n\nIf your input is too low or too extreme, it will let you know. If your demand exceeds standard sizes, you’ll be told to contact a specialist.\n\nThis app is free software under the GNU GPL v3.`);">Help</button>
@@ -182,13 +182,14 @@
 
   <div class="footer">
     <hr>
-    System Sizer II &copy; 2025 N. T. Crotser<br>
+    System Sizer II &copy; 2025 <a href="https://github.com/crotsertech">N. T. Crotser</a><br>
+    System Sizer II is a work in progress and miscalculations may occur. Use at your own risk.<br>
     <br>
   </div>
 
   <script>
     function showLicense() {
-      alert(`\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.`);
+      alert(`System Sizer II is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.`);
     }
 
     function calculate() {
